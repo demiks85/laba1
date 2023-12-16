@@ -1,0 +1,102 @@
+/* Оформление checkboxов */
+input[type="checkbox"]:checked + label {
+  background-color: green;
+}
+
+input[type="checkbox"]:not(:checked) + label {
+  background-color: yellow;
+}
+
+/* Оформление контейнера с элементами */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Оформление элементов в контейнере */
+.item {
+  width: 50px;
+  height: 70px;
+  background-color: yellow;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid #ccc;
+  margin-bottom: 3px;
+  position: absolute;
+}
+
+.item span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+}
+
+.item:nth-child(1),
+.item:nth-child(9) {
+  background-color: green;
+}
+
+/* Задаем позицию для элементов в контейнере */
+.item:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.item:nth-child(2) {
+  top: 0;
+  left: 60px;
+}
+
+.item:nth-child(3) {
+  top: 0;
+  left: 120px;
+}
+
+.item:nth-child(4) {
+  top: 0;
+  left: 180px;
+}
+
+.item:nth-child(5) {
+  top: 0;
+  left: 240px;
+}
+
+.item:nth-child(6) {
+  top: 0;
+  left: 300px;
+}
+
+.item:nth-child(7) {
+  top: 0;
+  left: 360px;
+}
+
+.item:nth-child(8) {
+  top: 0;
+  left: 420px;
+}
+
+.item:nth-child(9) {
+  top: 80px;
+  left: 0;
+  width: 470px;
+  margin-right: 0;
+}
+
+/* Стилізація нового елемента за допомогою float */
+.new-item {
+  position: absolute; /* Змінено з absolute на relative */
+  float: 150px; /* Додано float для обтікання текстом */
+  float: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: 1px solid #ccc;
+  margin-right: 10px; /* Простір між новим елементом і попередніми */
+
+}
